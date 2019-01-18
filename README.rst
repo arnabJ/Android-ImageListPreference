@@ -17,7 +17,7 @@ Features
 
 Requirements
 ============
-Tested with APIv28, but will work from APIv24 onwards. For APIv16 - APIv23 use: https://github.com/Proficient-Apps/Android-ImageListPreference
+Tested with APIv28, but will work from APIv21 onwards. For older APIs use: https://github.com/Proficient-Apps/Android-ImageListPreference
 
 Installation
 ============
@@ -35,7 +35,7 @@ In your applicationModule(app)/build.gradle add the ImageListPreference library 
 ::
   dependencies {
     ...
-    implementation 'com.github.arnabJ:Android-ImageListPreference:v1.0'
+    implementation 'com.github.arnabJ:Android-ImageListPreference:1.0.1'
   }
 
 Sync project, clean and build. You can use the ImageListPreference library as part of your project now.
@@ -52,7 +52,7 @@ xml
       xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"> <!-- You need to declare an application name space. -->
   
-      <in.proficientapps.preference.imagelist.ImageListPreference
+      <tk.arnabjportfolio.preference.imagelist.ImageListPreference
           android:key="pref_key_image_list_preference_1"
           android:title="@string/test_image_list_preference"
           android:dialogTitle="@string/test_image_list_preference"
@@ -61,7 +61,7 @@ xml
           app:entryImages="@array/entryImages" <!-- This is an array containing references to the image drawables. -->
           app:roundedImage="false" /> <!-- 'COMPULSORY' | Set to false if you don't want rounded images else set to true. -->
   
-      <in.proficientapps.preference.imagelist.ImageListPreference
+      <tk.arnabjportfolio.preference.imagelist.ImageListPreference
           android:key="pref_key_image_list_preference_2"
           android:title="@string/test_image_list_preference_2"
           android:dialogTitle="@string/test_image_list_preference_2"
@@ -103,6 +103,9 @@ xml
 
 Java
 ----
+Import ImageListPreference:
+::
+    import tk.arnabjportfolio.preference.imagelist.ImageListPreference;
 
 Inside onCreate(...) { ... } of your PreferenceActivity/PreferenceFragment
 
