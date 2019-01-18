@@ -6,3 +6,17 @@
 .DS_Store
 /build
 /captures
+/sample/build
+/ImageListPreference/build
+/.idea/assetWizardSettings.xml
+/.idea/caches/build_file_checksums.ser
+/.idea/caches/gradle_models.ser
+/.idea/dictionaries/Arnab_Jain.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/ImageListPreference/build/generated/source/buildConfig/debug/tk/arnabjportfolio/preference/imagelist/BuildConfig.java
+/ImageListPreference/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+/ImageListPreference/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output.json
+/ImageListPreference/build/intermediates/library_manifest/debug/AndroidManifest.xml
+/ImageListPreference/build/intermediates/merged_manifests/debug/output.json
+/ImageListPreference/build/outputs/logs/manifest-merger-debug-report.txt
