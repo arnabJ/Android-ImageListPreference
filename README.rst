@@ -17,28 +17,27 @@ Features
 
 Requirements
 ============
-Tested with APIv28, but will work from APIv24 onwards
-For APIv16 - APIv23 use: https://github.com/Proficient-Apps/Android-ImageListPreference
+Tested with APIv28, but will work from APIv24 onwards. For APIv16 - APIv23 use: https://github.com/Proficient-Apps/Android-ImageListPreference
 
 Installation
 ============
 
-Paste or clone this library into the /libs folder, in the root directory of your project. Create a new folder: /libs if not already present.
-
-Edit settings.gradle by adding the library. You have also define a project directory for the library.
-
-Your settings.gradle should look like below:
+Add "maven { url 'https://jitpack.io' }" (without quotes) to your root build.gradle file like this:
 ::
-	include ':app', ':ImageListPreference'
-	project(':ImageListPreference').projectDir = new File('app/libs/ImageListPreference')
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
 In your applicationModule(app)/build.gradle add the ImageListPreference library as a dependency:
 ::
   dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile project(":ImageListPreference")
+    ...
+    implementation 'com.github.arnabJ:Android-ImageListPreference:v1.0'
   }
+
 Sync project, clean and build. You can use the ImageListPreference library as part of your project now.
 
 Usage
